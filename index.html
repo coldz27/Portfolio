@@ -12,7 +12,7 @@
     <div id="container">
     <div id="profile">
       <img class="profile-photo" 
-      src="IMG/kb10.jpg" 
+      src="img/kb10.jpg" 
       alt="Kevin de ben 10 omniverse com um milkshake"
       />
       <p>@coldz27</p>
@@ -51,7 +51,12 @@
 
       </div>
     </div>
+    <script>
+      const toggleBtn = document.getElementById("toggleMode()");
+      toggleBtn.addEventListener("click", () => {
+           document.body.classList.toggle("light body");
+      });
+    </script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
-

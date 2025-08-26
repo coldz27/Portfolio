@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'renogare';
+  font-family: 'Arial', sans-serif;
 }
 
 body {
   background:
-  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0.6)),
-  url("img/fundoescuro.jpg") no-repeat top center/cover;
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/fundoescuro.jpg") no-repeat top center;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -16,13 +17,8 @@ body * {
   color: white;
 }
 
-@font-face {
-  font-family: 'renogare';
-  src: url('./font/renogare.ttf') format('truetype');
-}
-
 p {
-  font-family: 'renogare', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 a {
@@ -60,7 +56,7 @@ a {
 #switch button {
   width: 32px;
   height: 32px;
-  background: white url("./IMG/moon-stars.svg") no-repeat center;
+  background: white url("img/moon-stars.svg") no-repeat center;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -73,7 +69,7 @@ a {
 
 .light #switch button {
   animation: slide-in 0.2s forwards;
-  background: black url(./IMG/sun.svg);
+  background: rgb(255, 255, 255) url("img/sun.svg") no-repeat center;
 }
 
 #switch button:hover {
@@ -143,8 +139,7 @@ ul li a:hover {
   color: rgb(184, 26, 26);
 }
 
-
-#social links a {
+#social-links a {
   color: white;
   display: flex;
   align-items: center;
@@ -171,28 +166,27 @@ ul li a:hover {
   border: 3px solid rgb(16, 16, 138);
 }
 
-.light a, .light p, .light ion-icon {
+.light a,
+.light p,
+.light ion-icon {
   color: black;
 }
 
 @media (min-width: 700px) {
   body {
-    background: 
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/img/fundoescuro.jpg);
-    background-color: rgba(0, 0, 0, 0.9);
+    background: url("img/fundoescuro.jpg") no-repeat top center;
+    background-size: cover;
   }
 
   .light body {
-    background: 
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(/img/fundoclaro.jpg);
+    background: url("img/fundoclaro.jpg") no-repeat top center;
+    background-size: cover;
   }
 }
 
 @keyframes slide-in {
   from {
-    left: 0; 
+    left: 0;
   }
   to {
     left: 50%;
